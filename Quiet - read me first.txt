@@ -1,0 +1,83 @@
+Quiet: small, calm addons for WoW Forever
+=========================================
+
+A handful of little addons. Each does one thing, then keeps out of your way.
+You don't have to want them all: the game asks which ones you'd like to keep.
+
+
+Putting them in
+
+  1. Close the game.
+  2. Unzip this into your WoW Forever folder, under
+         _forever_\Interface\AddOns
+     so that you end up with  ...\AddOns\QuietBags,  ...\AddOns\QuietHUD  and so on.
+  3. Start the game and log in.
+
+
+The first time
+
+  A few seconds after you're in the world, a window says hello. It lists the
+  addons with a line on each and a switch beside it. They're all on: switch off
+  the ones you'd rather not have and press "Apply and reload", or keep them all.
+
+  Changed your mind later? Options > AddOns > Quiet > Choose addons.
+
+
+Getting new versions
+
+  In your AddOns folder there's now a file called "Update Quiet". With the game
+  closed, double-click it: it fetches the newest Quiet addons from GitHub and
+  puts them in place. Your settings stay as they are. No account needed.
+
+  Windows may ask "Do you want to run this file?" the first time: choose Run.
+
+  The addons and every version of them: https://github.com/AdmiralArg/quiet-addons
+
+
+What's in it
+
+  You'll notice these straight away
+    Quiet HUD          Fades the interface while you explore. A fight or a target
+                       brings it back.
+    Quiet Names        Softer names over heads, in a font you like.
+    Buff Glow          A buff you let drop pulses on its button until it's back up,
+                       and the move to press next gets a soft ring. Every class.
+    Zone Levels        Each zone's level range, on the world map.
+
+    These work by themselves: nothing to start. Quiet HUD has one switch at
+    the top of its settings that turns all of it off (or type /qhud off).
+
+  There when you ask for them
+    Quiet Bags         What your other characters carry: bags, bank and mail.
+                       Start: /qbags, or the round button on your bags.
+    Quiet Friends      Your friends' full names, one click away when you write
+                       a letter. Start: /qfriends to add them.
+    Quiet Pins         Notes on the map, and /way.
+                       Start: /qpin.
+    Quiet Fishing      One button fishes: pole out, cast, reel in, weapon back.
+                       Start: put the fishing button on your bar (below), then
+                       press it by water.
+    Quiet Professions  The cheapest way to level a crafting profession, at
+                       today's prices. Start: /qprof (open your profession's
+                       window once first).
+    Quiet Auctions     Steady gold from the auction house, on the characters
+                       you choose. Start: choose its characters in its settings.
+
+
+Buttons for your bar
+
+  Fishing, Professions, Bags, Pins and Auctions each have a button you can put
+  on an action bar (or a controller's crossbar), so you don't need the commands:
+
+    Options > AddOns > Quiet > the addon's name > "Put on my bar"
+    (or drag its icon from there onto any bar)
+
+
+Good to know
+
+  * Settings for all of them are in one place: Options > AddOns > Quiet.
+    Each page says how to start that addon.
+  * They say little in chat. A new one says hello once, in a small window.
+  * To remove one for good, delete its folder from Interface\AddOns.
+
+Free to use and to pass on (MIT licence).

@@ -1,0 +1,12 @@
+## Interface: 16001, 16002, 16003, 16100, 16101, 16200
+## Title: Quiet Pins
+## IconTexture: Interface\Icons\INV_Misc_Map_01
+## Notes: Map notes for the game's own map pin. /qpin opens a small window: your notes with Pin, Rename and Delete, a box to paste coordinates or a /way line into, and a note where you stand. A /way line pasted into chat pins the place without filling your notes; Keep saves it. The window can go on a bar from its settings (Options, AddOns, Quiet), or on a key (Key Bindings, AddOns). Notes are shared by all your characters; /qpin help for every command.
+## Author: Aslak
+## Version: 0.3.1
+## X-License: MIT
+## SavedVariables: QuietPinsDB
+
+QuietKit.lua
+QuietPins.lua
+Window.lua

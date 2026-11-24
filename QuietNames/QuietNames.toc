@@ -1,0 +1,15 @@
+## Interface: 16001, 16002, 16003, 16100, 16101, 16200
+## Title: Quiet Names
+## IconTexture: Interface\Icons\INV_Misc_Note_01
+## Notes: Softer names over characters' heads, in a font you pick from the game's own or your other addons'; and, if you wish, no names or nameplates at all outside a fight (/dark). Its settings are in Options, AddOns, Quiet.
+## Author: Aslak
+## Version: 0.3.1
+## X-License: MIT
+## SavedVariables: QuietNamesDB
+## OptionalDeps: ImprovedForever
+
+QuietKit.lua
+QuietNames.lua
+dark.lua
+window.lua
+options.lua

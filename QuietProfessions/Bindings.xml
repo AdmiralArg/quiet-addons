@@ -1,0 +1,5 @@
+<Bindings>
+	<Binding name="QUIETPROFESSIONS_TOGGLE" header="QUIETPROFESSIONS" category="ADDONS">
+		QuietProfessions_ToggleWindow()
+	</Binding>
+</Bindings>

@@ -1,0 +1,23 @@
+<Bindings>
+	<Binding name="QUIETAUCTIONS_TOGGLE" header="QUIETAUCTIONS" category="ADDONS">
+		QuietAuctions_Toggle()
+	</Binding>
+	<Binding name="QUIETAUCTIONS_NEXT" category="ADDONS">
+		QuietAuctions_Next()
+	</Binding>
+	<Binding name="QUIETAUCTIONS_SKIP" category="ADDONS">
+		QuietAuctions_Skip()
+	</Binding>
+	<Binding name="QUIETAUCTIONS_POST" category="ADDONS">
+		QuietAuctions_Post()
+	</Binding>
+	<Binding name="QUIETAUCTIONS_SELL" category="ADDONS">
+		QuietAuctions_Sell()
+	</Binding>
+	<Binding name="QUIETAUCTIONS_COLLECT" category="ADDONS">
+		QuietAuctions_Collect()
+	</Binding>
+	<Binding name="QUIETAUCTIONS_CANCEL" category="ADDONS">
+		QuietAuctions_Cancel()
+	</Binding>
+</Bindings>

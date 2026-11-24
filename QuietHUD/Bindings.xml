@@ -1,0 +1,8 @@
+<Bindings>
+	<Binding name="QUIETHUD_PEEK" header="QUIETHUD" category="ADDONS" runOnUp="true">
+		QuietHUD_Peek(keystate == "down")
+	</Binding>
+	<Binding name="QUIETHUD_TOGGLE" category="ADDONS">
+		QuietHUD_ToggleHud()
+	</Binding>
+</Bindings>

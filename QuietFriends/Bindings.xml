@@ -1,0 +1,5 @@
+<Bindings>
+	<Binding name="QUIETFRIENDS_TOGGLE" header="QUIETFRIENDS" category="ADDONS">
+		QuietFriends_ToggleWindow()
+	</Binding>
+</Bindings>
