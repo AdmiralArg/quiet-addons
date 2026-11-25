@@ -24,6 +24,8 @@ local CVARS = {
     "UnitNameFriendlyTotemName", "UnitNameEnemyTotemName", "UnitNamePlayerGuild", "UnitNamePlayerPVPTitle",
     "UnitNameNonCombatCreatureName", "UnitNameFriendlySpecialNPCName", "UnitNameHostleNPC", "UnitNameInteractiveNPC",
     "nameplateShowFriends", "nameplateShowEnemies", "nameplateShowAll",
+    -- (Forever's friendly plates: the friendly players' names are drawn on these, so they go too)
+    "nameplateShowFriendlyPlayers", "nameplateShowFriendlyNpcs",
 }
 
 -- What stays as you had it in a dungeon or raid, by the choice on the settings page ("all": everything stays)
@@ -147,6 +149,7 @@ function privateTable.GameNames()
     if InCombatLockdown() then return nil end
     local db = DB()
     db.dark, db.saved = false, nil
+    db.plates, db.platesBefore = false, nil
     local count = 0
     for _, cvar in ipairs(CVARS) do
         local ok, value = pcall(GetCVarDefault, cvar)
@@ -156,6 +159,61 @@ function privateTable.GameNames()
         end
     end
     return count
+end
+
+-- Nameplates instead of names (QuietNamesDB.plates): enemies get a nameplate whether or not you're fighting them, out
+-- to 60 yards, and their bare names, which the game draws only where there's no plate, go. Without it the game shows
+-- plates for what you fight and names for the rest, and plates stop at about 40 yards with names beyond.
+-- Turning it off puts back what you had (QuietNamesDB.platesBefore). While /dark has the names hidden, the changes
+-- go into the settings it keeps, so a fight brings back plates, not names.
+local PLATES = {
+    nameplateShowAll = "1",
+    nameplateShowEnemies = "1",
+    nameplateMaxDistance = "60", -- (each character has its own: set again at each login)
+    UnitNameHostleNPC = "0",
+    UnitNameEnemyPlayerName = "0",
+}
+
+-- Into the settings /dark keeps while it has them, or the game's own
+local function Write(cvar, value)
+    local saved = DB().saved
+    if saved and saved[cvar] ~= nil then
+        saved[cvar] = value
+    else
+        Set(cvar, value)
+    end
+end
+
+local function ApplyPlates(values)
+    for cvar, value in pairs(values) do
+        Write(cvar, value)
+    end
+    if DB().dark then Hide() end
+end
+
+function privateTable.PlatesOn()
+    return DB() ~= nil and DB().plates and true or false
+end
+
+--- Nameplates instead of names (true), or back as you had them (false). Not in a fight: false then.
+function privateTable.SetPlates(on)
+    local db = DB()
+    if InCombatLockdown() then return false end
+    if (on and true or false) == (db.plates and true or false) then return true end
+    if on then
+        local before = {}
+        for cvar in pairs(PLATES) do
+            before[cvar] = (db.saved and db.saved[cvar]) or Get(cvar)
+        end
+        db.platesBefore = before
+        db.plates = true
+        ApplyPlates(PLATES)
+    else
+        db.plates = false
+        ApplyPlates(db.platesBefore or {})
+        db.platesBefore = nil
+    end
+    return true
 end
 
 -- The key in Key Bindings, under Quiet Names
@@ -215,6 +273,7 @@ events:SetScript("OnEvent", function(_, event)
         started = true
         if db.dark and db.saved then Recapture() end
         CheckLeftOff()
+        if db.plates then ApplyPlates(PLATES) end
     end
     if db.dark then
         Hide()

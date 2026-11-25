@@ -1,5 +1,6 @@
 ## Interface: 16001, 16002, 16003, 16100, 16101, 16200
 ## Title: Quiet HUD
+## Category: Quiet
 ## IconTexture: Interface\Icons\Spell_Holy_Silence
 ## Notes: Fades the HUD while you explore and keeps the map, quests and chat quiet; on keyboard and mouse it shows more. Made for the controller and Improved Forever. Its settings are in Options, AddOns, Quiet (Improved Forever's Quiet tab with the controller). Based on ImmersiveFade by Luca.
 ## Author: Aslak

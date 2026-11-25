@@ -1,5 +1,6 @@
 ## Interface: 16001, 16002, 16003, 16100, 16101, 16200
 ## Title: Buff Glow
+## Category: Quiet
 ## IconTexture: Interface\Icons\Ability_Warrior_BattleShout
 ## Notes: A buff you keep up pulses on its button while it's missing (Battle Shout, a Paladin's aura, blessing and seal, Fortitude, Arcane Intellect...), moves like Overpower or Hammer of Wrath glint when they open up, and your next move gets a soft ring, for every class (your interrupt blinks orange while your target casts), on your action bars and the controller crossbar. For a Warrior, enemy nameplates without your Rend get a red mark in a fight. Its settings are in Options, AddOns, Quiet; /bsg to check, /bsg help for the commands.
 ## Author: Aslak

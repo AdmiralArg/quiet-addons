@@ -1,5 +1,6 @@
 ## Interface: 16001, 16002, 16003, 16100, 16101, 16200
 ## Title: Quiet Fishing
+## Category: Quiet
 ## IconTexture: Interface\Icons\Trade_Fishing
 ## Notes: One button for fishing: it takes out your fishing pole, casts, and the same key reels in; catches are looted at once. Leave it a few seconds (or get into a fight) and what the pole replaced comes back: your weapon, shield or off-hand. Put the button on your bar from its settings (Options, AddOns, Quiet) or with /qfish macro.
 ## Author: Aslak

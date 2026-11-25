@@ -1,5 +1,6 @@
 ## Interface: 16001, 16002, 16003, 16100, 16101, 16200
 ## Title: Quiet Auctions
+## Category: Quiet
 ## IconTexture: Interface\Icons\INV_Misc_Coin_01
 ## Notes: Steady gold for a bank alt. It scans the auction house and lists what sells for less than a vendor pays; Buy buys the top one (a press each), Sell sells it on at a vendor, Collect empties the mail, Post puts your unbound BoEs up. Each button says what one press does. It remembers prices (item tooltips show them), shows which recipes pay, the cheapest bundle to fill each profession crate (/qah crates), and plans what to fetch, make and buy (the Plan tab). It works only on the characters you choose: give each its role (Auctions, Crafting) in Options, AddOns, Quiet, where the macros QA Buy, QA Post, QA Sell and QA Collect are too. /qah opens the window; /qah help for every command.
 ## Author: Aslak

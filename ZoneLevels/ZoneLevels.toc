@@ -1,5 +1,6 @@
 ## Interface: 16001, 16002, 16003, 16100, 16101, 16200
 ## Title: Zone Levels
+## Category: Quiet
 ## IconTexture: Interface\Icons\Ability_Spy
 ## Notes: A small level range next to a zone's name when you point at it on the world map (WoW Forever's ranges), in any language the game is in.
 ## Author: Aslak

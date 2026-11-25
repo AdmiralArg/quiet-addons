@@ -1,5 +1,6 @@
 ## Interface: 16001, 16002, 16003, 16100, 16101, 16200
 ## Title: Quiet Bags
+## Category: Quiet
 ## IconTexture: Interface\Icons\INV_Misc_Bag_08
 ## Notes: What your other characters carry. Every character with this on writes down its bags, its bank (when open) and its mail (when open). /qbags, the round button on your bag window, or the macro on its settings page (for the crossbar) opens a small window to look through them, with a search box; item tooltips say who has how many. Its settings are in Options, AddOns, Quiet. Turn it on for every character, the bank alt too.
 ## Author: Aslak

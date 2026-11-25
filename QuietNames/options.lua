@@ -44,6 +44,18 @@ QuietKit.Register({
             run = function() privateTable.ToggleWindow() end,
         },
         {
+            section = "Nameplates",
+            label = "Nameplates instead of names",
+            tip = "Every enemy gets a nameplate, fighting or not, out to 60 yards, and there are no loose red names "
+                .. "beyond. Off puts back what you had.",
+            get = function() return privateTable.PlatesOn() end,
+            set = function(on)
+                if not privateTable.SetPlates(on) then
+                    QuietKit.Toast("After the fight, please.", privateTable.DARK_ICON)
+                end
+            end,
+        },
+        {
             section = "No names outside a fight",
             label = "Hide names outside a fight",
             tip = "Every name and nameplate goes while you're out of combat; a fight brings them back as you had them. "

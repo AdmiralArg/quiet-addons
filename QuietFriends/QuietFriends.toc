@@ -1,5 +1,6 @@
 ## Interface: 16001, 16002, 16003, 16100, 16101, 16200
 ## Title: Quiet Friends
+## Category: Quiet
 ## IconTexture: Interface\Icons\INV_Letter_15
 ## Notes: Your friends' full character names (first name and surname, as WoW Forever has them), with a note on who each one is. When you write a letter, they're listed beside the mail: a click puts the name in To. Each character sees the friends saved on its own server and faction, the ones mail can reach. /qfriends opens the list; /qfriends help for every command. Its settings are in Options, AddOns, Quiet.
 ## Author: Aslak
